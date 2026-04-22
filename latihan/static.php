@@ -1,18 +1,18 @@
 <?php
 
 class Counter {
-    public static $jumlah = 0;
+    public static $jumlah = 10;
 
-    public function tambah() {
-        self::$jumlah++;
+    public function kurang() {
+        self::$jumlah--;
     }
 }
 
 $c1 = new Counter();
 $c2 = new Counter();
 
-$c1->tambah();
-$c2->tambah();
+$c1->kurang();
+$c2->kurang();
 
 echo Counter::$jumlah;
 
