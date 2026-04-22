@@ -8,7 +8,6 @@ class Pengunjung {
         self::$jumlah++;
     }
 
-    // method reset
     public static function reset() {
         self::$jumlah = 0;
     }
