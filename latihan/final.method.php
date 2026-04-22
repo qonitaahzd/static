@@ -1,5 +1,4 @@
 <?php
-
 class Kendaraan {
     final public function mesin() {
         echo "Mesin standar";
