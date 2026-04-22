@@ -37,18 +37,12 @@ $p3 = new Produk("Lighting", 600000);
 $p3->tambahProduk();
 $produkList[] = $p3;
 
-/* =========================
-   HITUNG TOTAL HARGA PRODUK
-========================= */
 
 $totalHarga = 0;
 foreach($produkList as $p){
     $totalHarga += $p->harga;
 }
 
-/* =========================
-   SIMULASI TRANSAKSI
-========================= */
 
 $trx = new Transaksi();
 $hasilTransaksi = $trx->prosesTransaksi($totalHarga);
