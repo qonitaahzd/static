@@ -23,21 +23,17 @@ class Transaksi {
     }
 }
 
-/* =========================
-   MEMBUAT MINIMAL 3 PRODUK
-========================= */
-
 $produkList = [];
 
-$p1 = new Produk("Laptop", 7000000);
+$p1 = new Produk("Tripod", 800000);
 $p1->tambahProduk();
 $produkList[] = $p1;
 
-$p2 = new Produk("Mouse", 150000);
+$p2 = new Produk("Mic", 400000);
 $p2->tambahProduk();
 $produkList[] = $p2;
 
-$p3 = new Produk("Keyboard", 300000);
+$p3 = new Produk("Lighting", 600000);
 $p3->tambahProduk();
 $produkList[] = $p3;
 
